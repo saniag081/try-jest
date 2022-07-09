@@ -8,8 +8,12 @@ describe('Test for person', () => {
   });
 
   test('Should return down', () => {
+    // AAA
+    // arrange
     person.weight = 45;
+    // act
     const muscleMassIndex = person.calcIMC();
+    // assert
     expect(muscleMassIndex).toBe('down');
   });
 
